@@ -60,10 +60,10 @@ namespace WebApi.Controllers
         [ResponseType(typeof(Employee))]
         public IHttpActionResult PostEmployee(Employee employee)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+          //  if (!ModelState.IsValid)
+           // {
+             //   return BadRequest(ModelState);
+          //  }
 
             db.Employee.Add(employee);
             db.SaveChanges();
